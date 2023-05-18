@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx vercel dev",
     "test": "xo && jest",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "loc-dev": "micro-dev ./lib/server.js"
   },
   "license": "MIT",
   "repository": "vercel/hazel",
@@ -36,7 +37,6 @@
     "fetch": "1.1.0",
     "finalhandler": "1.1.0",
     "handlebars": "4.0.11",
-    "jest": "24.0.0",
     "micro": "9.3.3",
     "ms": "2.1.1",
     "node-fetch": "2.0.0",
@@ -48,7 +48,9 @@
   "devDependencies": {
     "eslint-config-prettier": "2.9.0",
     "husky": "0.14.3",
+    "jest": "24.0.0",
     "lint-staged": "7.0.0",
+    "micro-dev": "^3.1.0",
     "prettier": "1.10.2",
     "xo": "0.20.3"
   }
